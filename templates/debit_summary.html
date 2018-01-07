@@ -1,0 +1,80 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+    <style>
+        .cards1{
+        font-family:Calibri;
+    }
+    </style>
+
+    <div class="cards1" style="font-family:Calibri;">
+        <h1 style="font-size:25px; margin-left:50px; color:#656C98;">Credit Card Summary:
+
+            <div class="btn-group" style="margin-left:630px;">
+
+            <div class="btn-group">
+                <a href="/credit_summary"><button class="btn btn-default" type="button"><span class="glyphicon glyphicon-stats"></span></button>
+                </a>
+            </div>
+
+            <div class="btn-group">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" >Past 3 Months<span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Janaury</a></li>
+            <li><a href="#">December</a></li>
+            <li><a href="/nov">November</a></li>
+            </ul>
+            </div>
+
+
+            </div>
+            <div style="margin-left:45px;">
+            <img src="static/images/credit_bar_graph.png" width="'450" height="250">
+            <img src="static/images/credit_line__graph.png" width="450" height="250">
+            </div>
+
+        </h1>
+
+    </div>
+
+    <hr style="width:1000px">
+
+
+
+    <hr style="width:1000px">
+    <div class="cards" style="font-family:Calibri;">
+
+        <h1 style="font-size:25px; margin-left:50px; color:#656C98; ">Debit Card Summary
+
+        <div class="btn-group" style="margin-left:630px;">
+
+            <div class="btn-group">
+                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-stats"></span></button>
+            </div>
+
+            <div class="btn-group">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" >Past 3 Months<span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Janaury</a></li>
+            <li><a href="#">December</a></li>
+            <li><a href="#">November</a></li>
+            </ul>
+            </div>
+
+
+
+        </div>
+        </h1>
+
+        </div>
+
+            <div style="margin-left:100px;">
+            <img src="static/images/debit_bar_graph.png" width="'450" height="250">
+            <img src="static/images/debit_line_graph.png" width="450" height="250">
+            </div>
+        </h1>
+
+    </div>
+
+
+{% endblock %}

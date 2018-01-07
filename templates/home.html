@@ -1,0 +1,232 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+
+
+    <style>
+    .cards1{
+        font-family:Calibri;
+    }
+
+   .row1{
+       color:#808CCA;
+       font-family: Century Gothic;
+   }
+
+    .hyperlink{
+        color:black;
+    }
+
+    .hyperlink1{
+        color:limegreen;
+    }
+    .hyperlink2{
+        color:indianred;
+
+    .
+    }
+
+    tr:hover{
+        background-color:#F6F7FB;
+    }
+
+    </style>
+
+    <div class="cards1">
+        <h1 style="font-size:23px; margin-left:45px; color:#656C98; ">Top Spending Credit Cards:
+
+            <div class="btn-group" style="margin-left:610px;">
+
+            <div class="btn-group">
+                <a href="/credit_summary"><button class="btn btn-default" type="button"><span class="glyphicon glyphicon-stats"></span></button>
+                </a>
+            </div>
+
+            <div class="btn-group">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" >Past 3 Months<span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Janaury</a></li>
+            <li><a href="#">December</a></li>
+            <li><a href="/nov">November</a></li>
+            </ul>
+            </div>
+
+
+            </div>
+
+        </h1>
+
+
+        <table class="table table-bordered"  style="width:85%; margin-left:45px; font-size:15px;">
+        <tr class="row1">
+            <th style="width:5%">#</th>
+            <th style="width:30%">Card Details</th>
+            <th style="width:20%">Credit Limit</th>
+            <th style="width:10%">Card Status</th>
+            <th style="width:5%">Amount Spent(SGD)</th>
+            <th style="width:10%">Available Credit(SGD)</th>
+        </tr>
+
+        <tr>
+            <td><img src="static/images/UOB_platinum.png" width="90" height="60" ></td>
+                <td><u>UOB Platinum Card</u><br>
+                Card Number:9888-6121-0824-1112 </td>
+
+            <td>
+                <a href="#">
+                <div class="progress">
+                <div class="progress-bar progress-bar-danger " role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">70%</div>
+                </div>
+                </a>
+            </td>
+            <td ><a href="/activationnewpage" class="hyperlink">Available For Activation</a></td>
+            <td>$14000.00</td>
+            <td>$6000.00</td>
+        </tr>
+
+
+        <tr>
+           <td><img src="static/images/DBS_black_visa.png" width="90" height="60" ></td>
+            <td><u>DBS Black Card</u><br>
+            Card Number:7381-3191-7122-0333</td>
+
+            <td>
+                <a href="#">
+                <div class="progress">
+                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:55%">55%</div>
+                </div>
+                </a>
+            </td>
+            <td>Active</td>
+            <td>$11000.00</td>
+            <td>$9000.00</td>
+        </tr>
+
+
+        <tr>
+            <td><img src="static/images/OCBC Platinum MasterCard.png" width="90" height="60"></td>
+            <td><u>OCBC Platinum Mastercard</u><br>
+            Card Number:2342-3891-7652-0918</td>
+            <td>
+                <a href="#">
+                <div class="progress">
+                <div class="progress-bar progress-bar-success " role="progressbar" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100" style="width:18%">18%</div>
+                </div>
+                </a>
+            </td>
+            <td>Pending</td>
+            <td>$3600.00</td>
+            <td>$16400.00</td>
+        </tr>
+
+
+        <tr style="font-size:18px;">
+            <td colspan="4" style="font-family:Calibri;color: #808CCA" >Total:</td>
+            <td>$28600.00</td>
+            <td>$31400.00</td>
+        </tr>
+
+
+        </table>
+
+    </div>
+
+    <hr style="margin-left:10px; width:1100px">
+
+    <div class="cards1">
+
+        <h1 style="font-size:23px; margin-left:45px; color:#656C98; ">Top Spending Debit Cards:
+
+        <div class="btn-group" style="margin-left:610px;">
+
+            <div class="btn-group">
+                <a href="/debit_summary">
+                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-stats"></span></button>
+                </a>
+            </div>
+
+            <div class="btn-group">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" >Past 3 Months<span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Janaury</a></li>
+            <li><a href="#">December</a></li>
+            <li><a href="#">November</a></li>
+            </ul>
+            </div>
+
+
+
+        </div>
+        </h1>
+
+        <table class="table table-bordered " style="width:85%; margin-left:45px;  font-size:15px;">
+        <tr class="row1">
+            <th style="width:5%">#</th>
+            <th style="width:30%">Card Details</th>
+            <th style="width:20%">Availability For Cashline</th>
+            <th style="width:15%">Amount Spent(SGD)</th>
+            <th style="width:15%">Available Balance(SGD)</th>
+        </tr>
+        <tr>
+
+
+            <td><img src="static/images/POSB_PAssioncard_debit.png" width="90" height="60"></td>
+            <td><u>POSB PAssion Debit Card</u><br>
+            Account Number:234-125-985<br>
+            Card Number:1211-5958-4442-0211</td>
+
+            <td>
+              <a href="/viewcashline" class="hyperlink1"><span class="glyphicon glyphicon-ok"></span></a>
+                <a href="#" class="hyperlink"><p><u>Request For Auto Top-Up</u></p></a>
+            </td>
+
+            <td>$450.20</td>
+            <td>$300.20</td>
+        </tr>
+        <tr>
+            <td><img src="static/images/UOB_direct_visa_debit.png" width="90" height="60"></td>
+            <td><u>UOB Direct Visa Debit Card</u><br>
+            Account Number:201-324-7632<br>
+            Card Number:1222-5678-1212-0981</td>
+
+            <td>
+              <a href="#" class="hyperlink2"><span class="glyphicon glyphicon-remove"></span></a>
+                 <a href="/newapplication" class="hyperlink"><p><u>Apply For Cashline</u></p></a>
+                <a href="#" class="hyperlink" data-toggle="tooltip" data-placement="right" title="HELLO U R NOT ABLE TO APPLY SADLY" style="float:right;"><span class="glyphicon glyphicon-question-sign"></span></a>
+            </td>
+
+            <td>$200.15</td>
+            <td>$210.30</td>
+        </tr>
+        <tr>
+            <td><img src="static/images/OCBC_frank_debit.png" width="90" height="60"></td>
+            <td><u>OCBC FRANK Card</u><br>
+            Account Number:123-453-0986<br>
+            Card Number:2113-5166-0099-8768</td>
+
+            <td>
+
+                <a href="/viewextracash" class="hyperlink1"><span class="glyphicon glyphicon-ok"></span></a>
+                <a href="#" class="hyperlink"><p><u>Request For Auto Top-Up</u></p></a>
+
+            </td>
+
+            <td>$20.15</td>
+            <td>$10000.00</td>
+        </tr>
+
+        <tr style="font-size:18px;">
+            <td colspan="3" style="font-family:Calibri;color: #808CCA" >Total:</td>
+            <td >$670.50</td>
+            <td>$10510.50</td>
+
+        </tr>
+        </table>
+    </div>
+
+    <script>
+    $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+    </script>
+{% endblock %}

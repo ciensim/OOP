@@ -1,0 +1,158 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+    <!-- <style>
+        .human{
+            font-family: Calibri;
+            font-size:15px;
+        }
+    </style>
+
+    <div class="human" align="center">
+
+    <img src="static/images/icon2.png" width="200" height="190">
+    <p style="font-size:30px; color: #656C98;">SIM CI EN <a href="#" style="color: #656C98;"><span class="glyphicon glyphicon-edit"></span></a></p>
+
+    <p>Name: Sim Ci En<br>
+    NRIC:S9101920C<br>
+    Mobile Number: 89001092<br>
+    Home Number:67159021<br>
+    Address:Block 123, Ang Mo Kio Street 27 #11-212 Singapore 651123<br>
+
+       </p>
+</div>
+-->
+    <style>
+
+
+.cards {
+
+    width: 90%;
+  height:450px;
+  text-align: center;
+    align-content: center;
+  font-family: Calibri;
+  padding:10px;
+  border:1px solid #656C98;
+  border-radius:10px;
+
+
+
+
+}
+
+.detailsCards{
+  width: 90%;
+  height:450px;
+  text-align: center;
+  font-family: Calibri;
+  padding:10px;
+  border:1px solid #656C98;
+  border-radius:10px;
+
+}
+
+.infoCards{
+  width: 90%;
+  height:450px;
+  text-align: center;
+  font-family: Calibri;
+  padding:10px;
+  border:1px solid #656C98;
+  border-radius:10px;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #656C98;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  border-radius:6px;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+</style>
+
+
+
+
+
+  <div class="row">
+    <div class="col-sm-4" >
+
+     <div class="cards">
+
+    <h2 style="text-align:center">Profile</h2>
+
+    <img src="static/images/icon2.png" style="width:40%;align-self: center">
+    <h1>Zi Xuan</h1>
+    <p class="title">Web Developer</p>
+    <p>Citibank</p>
+    <button>Edit Details</button>
+
+
+    </div>
+
+    </div>
+
+    <div class="col-sm-4">
+
+    <div class="detailsCards">
+
+    <h2 style="text-align:center">Details</h2>
+    <hr>
+    <label><img src="static/images/icon2.png" style="width:30%; float:left;margin-left:30px"><p style="float:right; padding-right:20px; padding-top:20px;">Ong Zi Xuan<br> Web Developer(Citibank)</p></label>
+    <hr>
+    <p style="text-align:left; padding-left:30px;">Name:Ong Zi Xuan<br>
+    NRIC:S9016781A<br>
+    Gender:M<br>
+    Address:Block 15,Orchard Road #40-099<br>
+    Postal Code: Singapore:781241<br>
+    Home Number:67129878<br>
+    Mobile Number:87612341<br>
+    Email:zixuan@gmail.com<br>
+    Monthly Salary:$5000<br></p>
+    <p></p>
+
+    </div>
+
+    </div>
+
+    <div class="col-sm-4" >
+
+    <div class="infoCards">
+
+    <h2 style="text-align:center">Other Info</h2>
+
+    <hr>
+    <label><img src="static/images/icon2.png" style="width:30%; float:left;margin-left:30px"><p style="float:right; padding-right:20px; padding-top:20px;">Ong Zi Xuan<br> Web Developer(Citibank)</p></label>
+    <hr>
+
+    <p>
+        Number Of Credit Cards: 3<br>
+        Number Of Debit Cards:3<br>
+
+    </p>
+
+
+    </div>
+
+    </div>
+
+    </div>
+
+
+
+{% endblock %}
